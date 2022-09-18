@@ -1,0 +1,48 @@
+.a-style{
+    text-decoration: none;
+    color: black;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-col-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dot {
+    height: 4px;
+    width: 4px;
+    background-color: #606060;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    bottom: 2px;
+    margin: 0px 2px;
+  }
+  .hline{
+    background-color: #d3d3d3;
+    height: 5px;
+    margin: 30px;
+  }
+  .cursor-pointer{
+    cursor: pointer;
+  }
+  .hamburger div{
+    background-color: black;
+    width: 25px;
+    height: 1.6px;
+    margin: 7px 0px;
+  }
+  .thinline{
+    background-color: #d3d3d3;
+    height: 1px;
+    margin: 7px 0px;
+    border-top: 1px solid #d3d3d3;
+  }
+  .m25{
+    margin: 25px 0px;
+  }

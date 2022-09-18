@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300;400&display=swap');
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  }
+  :root{
+    --blue: #2a7de9;
+    --grey: #3b3c3f;
+    --lightgrey: #6b6e71;
+    --button: #1a73e8;
+    --createhoverbc: #2a7de912;;
+    --createhoverc: #1e59a7;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Product Sans';
+    font-size: 20px;
+}
+a:hover{
+    text-decoration: none;
+    color: var(--blue);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.container{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    width: 500px;
+    height: 600px;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+}
+.field{
+    margin: 10px 0px;
+}
+.field input{
+    height: 40px;
+    width: 415px;
+    font-size: 17px;
+}
+.f28{
+    font-size: 28px;
+}
+.thin{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--grey);
+}
+.forgot{
+    font-weight: 600;
+    color: var(--blue);
+    text-decoration: none;
+    font-size: 16px;
+    align-self: flex-start;
+    position: relative;
+    left: 28px;
+}
+.warn{
+    color: var(--lightgrey);
+    font-size: 15px;
+    margin-top: 50px;
+}
+.createac{
+    margin: 50px 0px;
+}
+.createac:hover{
+    color: var(--createhoverc);
+    background-color: var(--createhoverbc);
+}
+.submit{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 85px;
+    height: 38px;
+    background-color: var(--button);
+    left: 324px;
+    position: relative;
+    bottom: 83px;
+}
+.logo{
+    display: flex;
+    font-size: 40px;
+}
+.blue{
+    color: #4285F4;
+}
+.red{
+    color: #EA4335;
+}
+.yellow{
+    color: #FBBC05;
+}
+.green{
+    color: #34A853;
+}

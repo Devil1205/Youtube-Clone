@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+header{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+.navbar nav{
+    display: flex;
+    background-color: white;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    height: 70px;
+    align-items: center;
+    position: inherit;
+}
+.logo{
+    height: 70px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 115px; */
+    margin-right: 10px;
+    margin-left: 50px;
+}
+.logo img{
+    height: 23px;
+}
+.search{
+    display: flex;
+    width: 50%;
+    /* justify-content: center; */
+    position: inherit;
+    left: 20%;
+}
+.search input{
+    width: 100%;
+    min-width: 100px;
+    height: inherit;
+    padding-left: 10px;
+    border: 1px solid gray;
+}
+.btn img{
+    height: 25px;
+}
+.btn{
+    height: inherit;
+    min-width: 70px;
+    border: 1px solid gray;
+    position: relative;
+}
+.btn:hover .hoverdesc{
+    cursor: pointer;
+    display: inline-block;
+}
+.voicebtn{
+    background-color: transparent;
+    border: none;
+    margin: 0px 10px;
+}
+.voicebtn img{
+    height: 40px;
+    border-radius: 100%;
+}
+.others{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: inherit;
+    left: 81%;
+    height: fit-content;
+}
+.others a{
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+    position: relative;
+}
+.others img{
+    height: 24px;
+    padding: 8px 4px;
+}
+.genre{
+    background-color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+}
+.genre nav{
+    display: flex;
+}
+.genre nav a{
+    display: flex;
+    width: fit-content;
+    background-color: #e0e0e0;
+    align-items: center;
+    border-radius: 16px;
+    height: 38px;
+    padding: 0px 20px;
+    margin: 0px 10px;
+    white-space: nowrap;
+}
+.genre nav a:hover{
+    background-color: #c8c8c8;
+}
+.banner{
+    height: 0px;
+    overflow-x: clip;
+}
+.banner img{
+    width: 1200px;
+}
+.getnow{
+    position: relative;
+    left: 30px;
+    top: -73px;
+    background-color: white;
+    height: 35px;
+    border: 2px solid black;
+    width: 107px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cross{
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    left: 1162px;
+    top: -276px;
+}
+.cross img{
+    width: 27px;
+}
+.container{
+    height: 2000px;
+    background-color: hsla( 0, 0%, 93.3%, 0.4 );
+}
+.oneitem img{
+    height: 100%;
+    width: 100%;
+}
+.channel div{
+    width: 250px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+.channel img{
+    border-radius: 100%;
+    height: 48px;
+    width: 48px;
+    box-sizing: border-box;
+    margin-right: 15px;
+}
+.channel{
+    width: 100%;
+    margin: 10px 0px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr) );
+    column-gap: 15px;
+    padding: 30px;
+}
+.oneitem{
+    display: flex;
+    flex-direction: column;
+}
+.views{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+    color: #606060;
+}
+.views div{
+    font-size: 15px;
+    margin: 3px 0px;
+}
+.oneitem:hover{
+    animation-name: hoverthumbnail;
+    animation-duration: .5s;
+    animation-timing-function:ease-in;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    /* -webkit-animation-name: hoverthumbnail;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-timing-function:ease-in;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards; */
+}
+@keyframes hoverthumbnail {
+    from{
+        /* scale: 1.0; */
+        -webkit-transform: scale(1.0);
+    }
+    to{
+        /* scale: 1.2; */
+        -webkit-transform: scale(1.2);
+        background-color: white;
+    }
+}
+.heading{
+    font-size: 27px;
+    margin: 0px 30px;
+}
+.hoverdesc{
+    display: none;
+    background-color: #606060cf;
+    position: absolute;
+    width: 100%;
+    min-width: fit-content;
+    white-space: nowrap;
+    /* text-align: center; */
+    top: 63px;
+    /* height: 30px; */
+    padding: 9px;
+    color: white;
+    /* left: -9px; */
+}
+.others a:hover .hoverdesc{
+    display: inline-block;
+}
+@media screen and (max-width:700px) {
+    .search input{
+        display: none;
+    }
+    .search:hover input{
+        display: flex;
+    }
+}
