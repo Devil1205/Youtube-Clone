@@ -26,7 +26,7 @@
   .hline{
     background-color: #d3d3d3;
     height: 5px;
-    margin: 30px;
+    margin: 0px 30px;
   }
   .cursor-pointer{
     cursor: pointer;
